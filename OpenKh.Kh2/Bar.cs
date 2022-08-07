@@ -29,6 +29,7 @@ namespace OpenKh.Kh2
             [EntryType.Imgd] = 0x10,
             [EntryType.Seqd] = 0x10,
             [EntryType.Layout] = 0x10,
+            [EntryType.ModelCollision] = 0x04,
             [EntryType.Imgz] = 0x10,
             [EntryType.AnimationMap] = 0x10,
             [EntryType.Seb] = 0x40,
