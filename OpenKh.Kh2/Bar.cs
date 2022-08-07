@@ -16,16 +16,20 @@ namespace OpenKh.Kh2
         private static Dictionary<EntryType, int> _alignments = new Dictionary<EntryType, int>
         {
             [EntryType.Model] = 0x10,
+            [EntryType.DrawOctalTree] = 0x04,
+            [EntryType.CollisionOctalTree] = 0x10,
             [EntryType.ModelTexture] = 0x80,
             [EntryType.Motion] = 0x10,
             [EntryType.Tim2] = 0x40,
             [EntryType.CameraOctalTree] = 0x10,
-            [EntryType.CollisionOctalTree] = 0x10,
+            [EntryType.FogColor] = 0x04,
             [EntryType.ColorOctalTree] = 0x10,
             [EntryType.Anb] = 0x10,
             [EntryType.Pax] = 0x10,
             [EntryType.MapCollision2] = 0x10,
             [EntryType.Motionset] = 0x10,
+            [EntryType.BgObjPlacement] = 0x04,
+            [EntryType.ModelCollision] = 0x04,
             [EntryType.Imgd] = 0x10,
             [EntryType.Seqd] = 0x10,
             [EntryType.Layout] = 0x10,
@@ -41,7 +45,7 @@ namespace OpenKh.Kh2
             [EntryType.Minigame] = 0x10,
             [EntryType.Progress] = 0x10,
             [EntryType.BarUnknown] = 0x10,
-            [EntryType.Vag] = 0x10,
+            [EntryType.Vag] = 0x10
         };
 
         public enum EntryType
@@ -91,7 +95,7 @@ namespace OpenKh.Kh2
             Synthesis,
             BarUnknown = 46,
             Vibration = 47,
-			Vag = 48,
+			Vag = 48
 		}
 
         public enum MotionsetType
